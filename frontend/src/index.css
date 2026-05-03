@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#f5f7fa] text-slate-800 antialiased;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .phoenix-card {
+    @apply bg-white border border-slate-200 rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)];
+  }
+  .phoenix-input {
+    @apply w-full bg-white border border-slate-300 rounded-lg px-4 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all;
+  }
+}
+
